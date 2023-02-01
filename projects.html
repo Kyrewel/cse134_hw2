@@ -10,13 +10,36 @@
     <title>Max's Projects</title>
 </head>
 
+<header>
+    <nav>
+        <!-- link rel: relationship -->
+        <a href="https://maximilian110proj.netlify.app/">Home Page</a>
+        <a href="https://maximilian110proj.netlify.app/resume/">Resume</a>
+        <a href="https://maximilian110proj.netlify.app/projects/">Projects</a>
+        <a href="https://maximilian110proj.netlify.app/contact">Contact</a>
+    </nav>
+</header>
+
 <body>
-    <button onclick="showContent()">Show hidden content</button>
+    <label for="cars">Choose a project:</label>
+    <select name="cars" id="cars">
+        <optgroup label="Machine Learning">
+            <option value="cnn">Object ID</option>
+            <option value="rnn">Speech Recognition</option>
+        </optgroup>
+        <optgroup label="Full Stack">
+            <option value="personal website">Personal Website</option>
+            <option value="price tracker">Price Tracker</option>
+        </optgroup>
+    </select><br>
+
+    <button onclick="showContent()">Run Program</button>
 
     <!-- holds content until page loads. Can use javascript to render later -->
     <template>
-        <h2>Flower</h2>
-        <img src="https://assets-prd.ignimgs.com/2021/09/14/lostinrandom-blogroll-01-1631659942612.jpg" width="400">
+        <!-- <h2>Flower</h2>
+        <img src="https://assets-prd.ignimgs.com/2021/09/14/lostinrandom-blogroll-01-1631659942612.jpg" width="400"> -->
+        placeholder - add functionality to run one of my own projects<br>
     </template>
 
     <script>
@@ -27,40 +50,11 @@
         } 
     </script>
 
-    <table>
-        <!-- caption must be inserted right after table tag -->
-        <caption>Test caption</caption>
-
-        <!-- specifies column properties for entire columns -->
-        <colgroup>
-            <col span="2" style="background-color: green">;
-        </colgroup>
-
-
-        <!-- rows -->
-        <tr>
-            <!-- headers -->
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-        </tr>
-        <tr>
-            <!-- data -->
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-    </table>
 
     <figure>
         <img src="https://media.contentapi.ea.com/content/dam/eacom/lost-in-random/images/2021/08/lir-usp-in-engine-screen-twotown-royam-no-logo.jpg.adapt.crop191x100.628p.jpg"
             width="400">
-        <figcaption>SMTH i found randomly</figcaption>
+        <figcaption>Temp photo, will be replaced with preview of project</figcaption>
     </figure>
 
 </body>

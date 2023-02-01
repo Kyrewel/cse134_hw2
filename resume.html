@@ -12,26 +12,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <form>
-        <!-- fieldset will group elements in a form -->
-        <fieldset>
-            <!-- legend defines caption for fieldset-->
-            <legend>Contact me:</legend>
-            <!-- label defines labe for form elements. for attribute on <labe> should be
-         equal to the id attribute of the <input> element -->
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="Email">email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <textarea id="w3review" name="w3review" rows="4" cols="50">Comment extra details you want me to know!
-            </textarea><br>
-            <button type="button">Click Me!</button>
-        </fieldset>
-    </form>
+<header>
+    <nav>
+        <!-- link rel: relationship -->
+        <a href="https://maximilian110proj.netlify.app/">Home Page</a>
+        <a href="https://maximilian110proj.netlify.app/resume/">Resume</a>
+        <a href="https://maximilian110proj.netlify.app/projects/">Projects</a>
+        <a href="https://maximilian110proj.netlify.app/contact">Contact</a>
+    </nav>
+</header>
 
+<body>
     <label for="browser">Choose your browser from the list:</label>
     <input list="browsers" name="browser" id="browser">
 
@@ -44,10 +35,32 @@
         <option value="Safari">
     </datalist>
 
-    <details>
-        <summary>Summary of drop down</summary>
-        Here's some extra details. Is a drop down
-    </details>
+    <table>
+        <!-- caption must be inserted right after table tag -->
+        <caption>Notable coursework</caption>
+        <!-- specifies column properties for entire columns -->
+        <colgroup>
+            <col span="1" style="background-color: green">
+        </colgroup>
+        <!-- rows -->
+        <tr>
+            <!-- headers -->
+            <th>Class</th>
+            <th>class description</th>
+            <th>skills learned</th>
+        </tr>
+        <tr>
+            <!-- data -->
+            <td>CSE 101</td>
+            <td>add description</td>
+            <td>various data structures and algorithms</td>
+        </tr>
+        <tr>
+            <td>CSE 134B</td>
+            <td>add description</td>
+            <td>we will see :D</td>
+        </tr>
+    </table>
 </body>
 
 </html>

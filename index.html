@@ -3,63 +3,69 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Simple demo Web page for CSE 134B" />
+    <meta name="description" content="Personal webpage for Maximilian Wang" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSE 134B Homework 2 Website</title>
-
-
+    <title>Maximilian Wang</title>
 </head>
 
 <body>
     <header>
         <p>
-            CSE 134B Homework 2 Website
+            Maixmilian Wang<br>
         </p>
         <!-- meant for blocks of nagivation links -->
         <nav>
-            <link href="https://maximilian110proj.netlify.app/">Homepage</link>
+            <!-- link rel: relationship -->
+            <link rel="stylesheet" href="styles.css">
+            <a href="https://maximilian110proj.netlify.app/">Home Page</a>
             <a href="https://maximilian110proj.netlify.app/resume/">Resume</a>
             <a href="https://maximilian110proj.netlify.app/projects/">Projects</a>
+            <a href="https://maximilian110proj.netlify.app/contact">Contact</a>
         </nav>
 
         <h1>
-            This is a sample heading
+            Learn. Practice. Eat. Sleep.
             <br>
             <!-- helps specify image resources -->
             <picture>
-                <img src="https://miro.medium.com/freeze/max/1160/1*t_G1kZwKv0p2arQCgYG7IQ.gif" , width="500">
+                <img src="https://miro.medium.com/freeze/max/1160/1*t_G1kZwKv0p2arQCgYG7IQ.gif" , width="500"><br>
                 <!-- add more images/media here here -->
             </picture>
-            <iframe src="https://maximilian110proj.netlify.app/resume/" title="Resume"></iframe>
-
             <!-- will choose the first source that website supports -->
             <audio>
                 <!-- any audio files go here MP3, WAV, and OGG-->
-                <source src="smth.ogg" type="audio.ogg">
-                <source src="smth.mp3" type="audio.mpeg">
-                Your browser doesn't support the audio element
             </audio>
-
             <video>
                 <!-- any video files go here MP4, WebM, and OGG-->
             </video>
         </h1>
         <h2>
-            This is heading 2
-
+            Projects
         </h2>
         <h3>
-            This is heading 3
+            Sample project 1<br>
+            Sample project 2<br>
+            Sample project 3<br>
         </h3>
     </header>
 
     <main>
+        <summary>About me</summary>
+        Placeholder for text for me
         This is the main
         <pre> Well hello there</pre>
         Well then.
     </main>
+
+    <details>
+        Extra details about something
+    </details>
+
+
+    <hr>
+    Split for section with visuals<br>
 
     <canvas id="myCanvas"></canvas>
     <script>
@@ -94,15 +100,19 @@
 
     <!-- span is like div, but used on small segments of text, lnks, images, 
         etc. that appear inline with content -->
-    <span>testing</span>
-    <span>alrighty</span>
+
 
     <aside>
+        <!-- span for adding customization mainly -->
+        <span>Favorite</span>
+        <span>Drinks</span>
         <ul>
             <li>Coffee</li>
             <li>Tea</li>
             <li>Milk</li>
         </ul>
+
+        If I had to choose an order
         <ol>
             <li>Coffee</li>
             <li>Tea</li>
@@ -112,17 +122,7 @@
 
 
     <footer>
-        <label for="cars">Choose a car:</label>
-        <select name="cars" id="cars">
-            <optgroup label="Swedish Cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-            </optgroup>
-            <optgroup label="German Cars">
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </optgroup>
-        </select>
+        <iframe src="https://maximilian110proj.netlify.app/contact/" title="contact me"></iframe>
     </footer>
 
 </body>
