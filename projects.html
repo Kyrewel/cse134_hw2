@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Simple demo Web page for CSE 134B" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max's Projects</title>
+</head>
+
+<body>
+    <button onclick="showContent()">Show hidden content</button>
+
+    <!-- holds content until page loads. Can use javascript to render later -->
+    <template>
+        <h2>Flower</h2>
+        <img src="https://assets-prd.ignimgs.com/2021/09/14/lostinrandom-blogroll-01-1631659942612.jpg" width="400">
+    </template>
+
+    <script>
+        function showContent() {
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+        } 
+    </script>
+
+    <table>
+        <!-- caption must be inserted right after table tag -->
+        <caption>Test caption</caption>
+
+        <!-- specifies column properties for entire columns -->
+        <colgroup>
+            <col span="2" style="background-color: green">;
+        </colgroup>
+
+
+        <!-- rows -->
+        <tr>
+            <!-- headers -->
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <!-- data -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <figure>
+        <img src="https://media.contentapi.ea.com/content/dam/eacom/lost-in-random/images/2021/08/lir-usp-in-engine-screen-twotown-royam-no-logo.jpg.adapt.crop191x100.628p.jpg"
+            width="400">
+        <figcaption>SMTH i found randomly</figcaption>
+    </figure>
+
+</body>

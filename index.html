@@ -14,10 +14,117 @@
 
 <body>
     <header>
-        <h1>
+        <p>
             CSE 134B Homework 2 Website
+        </p>
+        <!-- meant for blocks of nagivation links -->
+        <nav>
+            <link href="https://maximilian110proj.netlify.app/">Homepage</link>
+            <a href="https://maximilian110proj.netlify.app/resume/">Resume</a>
+            <a href="https://maximilian110proj.netlify.app/projects/">Projects</a>
+        </nav>
+
+        <h1>
+            This is a sample heading
+            <br>
+            <!-- helps specify image resources -->
+            <picture>
+                <img src="https://miro.medium.com/freeze/max/1160/1*t_G1kZwKv0p2arQCgYG7IQ.gif" , width="500">
+                <!-- add more images/media here here -->
+            </picture>
+            <iframe src="https://maximilian110proj.netlify.app/resume/" title="Resume"></iframe>
+
+            <!-- will choose the first source that website supports -->
+            <audio>
+                <!-- any audio files go here MP3, WAV, and OGG-->
+                <source src="smth.ogg" type="audio.ogg">
+                <source src="smth.mp3" type="audio.mpeg">
+                Your browser doesn't support the audio element
+            </audio>
+
+            <video>
+                <!-- any video files go here MP4, WebM, and OGG-->
+            </video>
         </h1>
+        <h2>
+            This is heading 2
+
+        </h2>
+        <h3>
+            This is heading 3
+        </h3>
     </header>
+
+    <main>
+        This is the main
+        <pre> Well hello there</pre>
+        Well then.
+    </main>
+
+    <canvas id="myCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+
+    <hr>
+    <!-- section should only use if there's not a more specific element to represent 
+        the related content -->
+    <section>
+        <code> code up smth ig </code>
+    </section>
+
+    <!-- div typically used for container of html elements which are styled with
+         CSS or manipulated with JS
+        - creates a block level element-->
+    <div>
+        <b> Bold test ig</b>
+        <i> Italics test ig</i>
+        <strong> TEXT STRONG</strong>
+        <em> emphasize this</em>
+        Whole block rite
+    </div>
+    <br>
+
+    <!-- span is like div, but used on small segments of text, lnks, images, 
+        etc. that appear inline with content -->
+    <span>testing</span>
+    <span>alrighty</span>
+
+    <aside>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    </aside>
+
+
+    <footer>
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+    </footer>
+
 </body>
 
 </html>

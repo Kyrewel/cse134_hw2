@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="resume page" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Resume" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max's Resume</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <!-- fieldset will group elements in a form -->
+        <fieldset>
+            <!-- legend defines caption for fieldset-->
+            <legend>Contact me:</legend>
+            <!-- label defines labe for form elements. for attribute on <labe> should be
+         equal to the id attribute of the <input> element -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="Email">email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">Comment extra details you want me to know!
+            </textarea><br>
+            <button type="button">Click Me!</button>
+        </fieldset>
+    </form>
+
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+
+    <!-- datalist provides autocomplete feature for inputs -->
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <details>
+        <summary>Summary of drop down</summary>
+        Here's some extra details. Is a drop down
+    </details>
+</body>
+
+</html>
