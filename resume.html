@@ -12,22 +12,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<header>
-    <p>
-        Maximilian Wang<br>
-    </p>
-    <nav>
-        <!-- link rel: relationship -->
-        <a href="https://maximilian110proj.netlify.app/">Home Page</a>
-        <a href="https://maximilian110proj.netlify.app/resume/">Resume</a>
-        <a href="https://maximilian110proj.netlify.app/projects/">Projects</a>
-        <a href="https://maximilian110proj.netlify.app/contact">Contact</a>
-    </nav>
-</header>
-
 <body>
-    <label for="browser">Type section you want to see:</label>
-    <input list="section" name="resume sections" id="resume sections">
+    <header>
+        <p>
+            Maximilian Wang<br>
+        </p>
+        <nav>
+            <!-- link rel: relationship -->
+            <a href="https://maximilian110proj.netlify.app/">Home Page</a>
+            <a href="https://maximilian110proj.netlify.app/resume/">Resume</a>
+            <a href="https://maximilian110proj.netlify.app/projects/">Projects</a>
+            <a href="https://maximilian110proj.netlify.app/contact">Contact</a>
+        </nav>
+    </header>
+
+    <label for="section">Type section you want to see:</label>
+    <input list="section" name="resumeSections" id="resumeSections">
 
     <!-- datalist provides autocomplete feature for inputs -->
     <datalist id="section">
@@ -43,7 +43,7 @@
         <caption>Notable coursework</caption>
         <!-- specifies column properties for entire columns -->
         <colgroup>
-            <col span="1" style="background-color: green">
+            <col span="3" style="background-color: gray">
         </colgroup>
         <!-- rows -->
         <tr>
