@@ -2,6 +2,49 @@
     font-family: sans-serif;
 }
 
+@font-face {
+  font-family: "helvetica-download";
+  src: url("/fonts/helvetica-lt-light.ttf");
+}
+
+h2 { 
+  color:slategrey;
+  font-size:30px;
+  padding: 10px;
+  background-color: rgb(115, 170, 180);
+  border-radius: 7px;
+  color:#1f2f2f;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.exp {
+  font-size: 20px;
+  font-weight:bold;
+  padding: 0%;
+  margin: 0px;
+}
+
+.role {
+  font-size: 15px;
+  padding: 0%;
+  margin: 0px;
+}
+
+.backtext {
+  font-family: helvetica-download;
+  position:fixed;
+  top: 30%;
+  left: 40%;
+  z-index: -1;
+  font-size: 15vh;
+  line-height: 1;
+  color:rgb(247, 230, 247);
+  width: 50vh;
+}
+
 #navbar {
   display: flex;
   justify-content: space-evenly;
@@ -9,16 +52,34 @@
   height: 50px;
 }
 
+#pagenav{
+  font-family: helvetica-download;
+  font-size: 40px;
+  margin: 0px;
+}
+
+#updateMsg{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  color:slategrey;
+  background-color: #d4f0f0;
+}
+
 a:link, a:visited {
     text-decoration: none;
     font-size: 20px;
     font-style: normal;
     color: darkslategrey;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 a:hover {
-    color: #8fcaca;
+    background-color:blanchedalmond;
     font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .column-layout {
@@ -34,6 +95,14 @@ a:hover {
   margin-bottom: 20px;
   box-sizing: border-box;
   flex-basis: 15%;
+  background-color: rgb(218, 90, 70);
+  height: 400px;
+  padding: 30px;
+  border-radius: 7px;
+}
+
+.side-left *{
+  color: #1f2f2f
 }
 
 .side-right{
@@ -61,13 +130,13 @@ a:hover {
   }
   
 .typing-demo {
-  width: 28ch;
+  width: 38ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 30px;
+  font-size: 20px;
   color:white
 }
 
@@ -116,16 +185,18 @@ footer p{
   padding: 10px
 }
 
-@media screen and (max-width: 1200px) {
-
+#logo a, #platform a{
+  padding: 5px;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 1024px) {
-
-}
 @media screen and (min-width: 850px) {
   .column-layout {
     display: flex;
     justify-content: space-between;
+    padding: 40px;
+  }
+  .typing-demo {
+    font-size: 30px;
   }
 }

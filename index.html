@@ -13,7 +13,7 @@
 
 <header>
     <div class="wrapper">
-        <p class="typing-demo">Learn. Practice. Eat. Sleep.</p>
+        <p class="typing-demo">Learn code. Practice code. Sleep code.</p>
     </div>
 </header>
 
@@ -22,78 +22,93 @@
     <!-- link rel: relationship -->
     <a class="active" href="/">Home Page</a>
     <a href="/resume.html">Resume</a>
-    <a href="/projects.html/">Projects</a>
+    <a href="/projects.html">Projects</a>
     <a href="/contact.html">Contact</a>
 </nav>
 
-<p>
+<section id="updateMsg">
     Hi! Welcome to my webpage! I'm in the middle of learning the basics of html, css, and javascript,
-    so there should be improvements coming to this page very soon!
-</p>
+    so there should be regular improvements coming to this page (next update soon!)
+</section>
 
 <section>
     <div class="column-layout">
         <div class="side-left">
-            <h2>Maximilian Wang</h2>
-            <p>Student at UCSD</p>
+            <h1>Maximilian Wang</h1>
+            <p>Outdoorsman</p>
             <p>Basketball enthusiast</p>
+            <p>Self proclaimed music nerd (work in progress)</p>
             </ul>
         </div>
 
         <div id="anchor-pagenav" class="side-right">
             <p id="pagenav">Jump To</p>
             <nav>
-                
+                <a href="#anchor-education">Education</a><br/>
+                <a href="#anchor-experience">Experience</a><br/>
+                <a href="#anchor-projects">Project Preview</a>
             </nav>
+            <div class="backtext">
+                M A X I M I L I A N W A N G
+            </div>
         </div>
         
         <div class="main-column">
-            <h2 id="about">
-                A little about me...
-            </h2>
-            <ul> 
-                <li>Student at UCSD</li>
-                <li>Basketball Enthusiast</li>
-                <li>Piano/Violin</li>
-            </ul>
-
             <div id="anchor-education"">
                 <h2 id="education">Education</h2>
-                <p>University of California San Diego</p>
-                <p>Computer Science B.S.</p>
-                <p>Class of 2024</p>
+                <h3>University of California San Diego</h3>
+                <p class="uniDes">Computer Science B.S.</p>
+                <p class="uniDes">Class of 2024</p>
+                <h3>Notable Coursework</h2>
+                <ul>
+                    <li>CSE 101 : Design and Analysis of Algorithms</li>
+                    <li>CSE 110 : Software Engineering</li>
+                    <li>CSE 132 : Database System Principles</li>
+                    <li>CSE 134 : Web Client Languages</li>
+                    <li>CSE 141 : Introduction to Computer Architecture</li>
+                </ul>
             </div>
 
             <div id="anchor-experience">
                 <h2 id="experience">Experience</h2>
-                <div>
-                    <p class="exp">John Hopkins Applied Physics Lab</p>
-                    <p class="role">ATLAS Intern</p>
-                    <ul>
-                        <li>Developed machine learning/signal processing tools to automate target ID 
-                            and analysis with MATLAB</li>
-                        <li>Built neural networks utilizing RNNs for classification over time intervals</li>
-                        <li>Created scripts that simulate, extrapolate/interpolate data that streamline 
-                            data collection and augmentation</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="exp">UCSC Google Developer Student Club</p>
-                    <p class="role">Director of Instruction</p>
-                    <ul>
-                        <li>UCSC liason with Google to prepare students for the Google Solution Challenge</li>
-                        <li>Organized 16 events consisting of workshops and study jams</li>
-                        <li>Taught 2-6 hour events coving basic proficienc in basic app/web development 
-                            (HTML, CSS, JS, Firebase) and ohter tools (PyTorch, Kubernetes, etc.)</li>
-                    </ul>
-                </div>
+                <p class="exp">John Hopkins Applied Physics Lab</p>
+                <p class="role">ATLAS Intern</p>
+                <ul>
+                    <li>Developed machine learning/signal processing tools to automate target ID 
+                        and analysis with MATLAB</li>
+                    <li>Built neural networks utilizing RNNs for classification over time intervals</li>
+                    <li>Created scripts that simulate, extrapolate/interpolate data that streamline 
+                        data collection and augmentation</li>
+                </ul>
+
+                <p class="exp">UCSC Google Developer Student Club</p>
+                <p class="role">Director of Instruction</p>
+                <ul>
+                    <li>UCSC liason with Google to prepare students for the Google Solution Challenge</li>
+                    <li>Organized 16 events consisting of workshops and study jams</li>
+                    <li>Taught 2-6 hour events coving basic proficienc in basic app/web development 
+                        (HTML, CSS, JS, Firebase) and ohter tools (PyTorch, Kubernetes, etc.)</li>
+                </ul>
             </div>
 
             <div id="anchor-projects">
                 <h2 id="projects">Projects</h2>
+                <p class="exp">Personal Webpage</p>
+                <p class="role">Created a webpage for people to get to know me and showcase my work!</p>
+                <p>Technologies:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS (coming soon!)</li>
+                </ul>
                 <p>
-
+                    Webpage has been designed with accessibility in mind, attempting to keep the resources that
+                    need to be loaded to a minimum as well as multiple screen size support while maintaining 
+                    aesthetic value. Will have more and more features to add, including the use of javascript to 
+                    create even more flair and utility, but ultimately will still have something to fall back on 
+                    when javascript is not available!
                 </p>
+                <p class="exp">Project List to be updated soon!</p>
             </div>
         </div>
     </div>
