@@ -42,7 +42,7 @@ h3 {
 }
 
 .backtext {
-  font-family: helvetica-download;
+  font-family: helvetica-download, Arial, Helvetica, sans-serif;
   position:fixed;
   top: 10%;
   left: 10%;
@@ -62,7 +62,7 @@ h3 {
 }
 
 #pagenav{
-  font-family: helvetica-download;
+  font-family: helvetica-download, Arial, Helvetica, sans-serif;
   font-size: 40px;
   margin: 0px;
 }
