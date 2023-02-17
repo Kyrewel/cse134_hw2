@@ -36,8 +36,8 @@ h3 {
 .backtext {
   font-family: helvetica-download;
   position:fixed;
-  top: 30%;
-  left: 40%;
+  top: 10%;
+  left: 10%;
   z-index: -1;
   font-size: 15vh;
   line-height: 1;
