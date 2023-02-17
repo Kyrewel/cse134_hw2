@@ -1,3 +1,9 @@
+:root {
+  --pastel1: rgb(115, 170, 180);
+  --pastel2: rgb(247, 230, 247);
+  --pastel3: #d4f0f0;
+}
+
 * {
     font-family: sans-serif;
 }
@@ -11,7 +17,7 @@ h2 {
   color:slategrey;
   font-size:30px;
   padding: 10px;
-  background-color: rgb(115, 170, 180);
+  background-color: var(--pastel1);
   border-radius: 7px;
   color:#1f2f2f;
 }
@@ -49,7 +55,7 @@ h3 {
   z-index: -1;
   font-size: 15vh;
   line-height: 1;
-  color:rgb(247, 230, 247);
+  color: var(--pastel2)
   width: 50vh;
   transform: rotate(10deg);
 }
@@ -72,7 +78,7 @@ h3 {
   justify-content: center;
   padding: 40px;
   color:slategrey;
-  background-color: #d4f0f0;
+  background-color: var(--pastel3);
 }
 
 a:link, a:visited {
