@@ -43,10 +43,6 @@ h3 {
   margin: 0px;
 }
 
-#anchor-education p, #anchor-education h3{
-  line-height: .5;
-}
-
 .backtext {
   font-family: helvetica-download, Arial, Helvetica, sans-serif;
   position:fixed;
@@ -155,7 +151,7 @@ a:hover {
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 20px;
+  font-size: 15px;
   color:white
 }
 
@@ -210,13 +206,14 @@ footer p{
 }
 
 @media screen and (min-width: 480px) {
+  #anchor-education p, #anchor-education h3{
+    line-height: .5;
+  }
   .column-layout {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    padding: 60px;
   }
   .typing-demo {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -224,9 +221,9 @@ footer p{
   .column-layout {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 20px;
   }
   .typing-demo {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
