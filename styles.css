@@ -111,13 +111,13 @@ a:hover {
   box-sizing: border-box;
   flex-basis: 15%;
   background-color: rgb(218, 90, 70);
-  height: 400px;
   padding: 30px;
   border-radius: 7px;
+  opacity: .74;
 }
 
 .side-left *{
-  color: #1f2f2f
+  color:black
 }
 
 .side-right{
