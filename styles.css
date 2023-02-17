@@ -188,10 +188,10 @@ footer {
   height:80px;
 }
 
-footer p{
-  font-size: 24px;
-  color: #5a5a5a;
-  padding: 30px;
+footer p {
+  font-family: helvetica-download, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color:#1f2f2f;
 }
 
 .logo {
@@ -212,9 +212,11 @@ footer p{
   padding: 10px
 }
 
-#logo a, #platform a{
+#logo a, #platform a, #logo a:hover, #platform a:hover{
   padding: 5px;
-  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 480px) {
