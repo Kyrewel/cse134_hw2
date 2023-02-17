@@ -11,128 +11,106 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <header>
-        <p>
-            Maximilian Wang<br>
-        </p>
-        <!-- meant for blocks of nagivation links -->
-        <nav>
-            <!-- link rel: relationship -->
-            
-            <a href="/">Home Page</a>
-            <a href="/resume.html">Resume</a>
-            <a href="/projects.html/">Projects</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
-
-        <h1>
-            Learn. Practice. Eat. Sleep.
-            <br>
-            <!-- helps specify image resources -->
-            <picture>
-                <img src="https://miro.medium.com/freeze/max/1160/1*t_G1kZwKv0p2arQCgYG7IQ.gif" alt="not found"
-                    width="500">
-                <!-- add more images/media here here -->
-            </picture>
-            <!-- will choose the first source that website supports -->
-            <audio>
-                <!-- any audio files go here MP3, WAV, and OGG-->
-            </audio>
-            <video>
-                <!-- any video files go here MP4, WebM, and OGG-->
-            </video>
-            <br>
-        </h1>
-        <h2>
-            Experience
-        </h2>
-        <h3>
-            Sample 1<br>
-            Sample 2<br>
-            Sample 3<br>
-        </h3>
-    </header>
-    <details>
-        <summary>
-            About me<br>
-            Placeholder for text for me
-        </summary>
-        <p>Extra details about something</p>
-    </details>
-    <main>
-        This is the main
-        <pre> Preformatted text, will probably add some sort of quote or smth</pre>
-        Projects
-    </main>
-
-
-
-    <hr>
-    Split for section with visuals<br>
-
-    <canvas id="myCanvas"></canvas>
-    <script>
-        var canvas = document.getElementById("myCanvas");
-        var ctx = canvas.getContext("2d");
-        ctx.fillStyle = "#FF0000";
-        ctx.fillRect(0, 0, 80, 80);
-    </script>
-    <svg width="300" height="200">
-        <polygon points="100,10 40,198 190,78 10,78 160,198"
-            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
-    </svg>
-
-    <hr>
-    <!-- section should only use if there's not a more specific element to represent 
-        the related content -->
-    <section>
-        <h5>
-            Some fun code or something
-        </h5>
-
-        <code> code up smth ig </code>
-    </section>
-
-    <!-- div typically used for container of html elements which are styled with
-         CSS or manipulated with JS
-        - creates a block level element-->
-    <div>
-        <b>CRAZY </b>
-        <i>details</i>
-        <strong>you want to know</strong><br>
-        <em>trust</em><br>
+<header>
+    <div class="wrapper">
+        <p class="typing-demo">Learn. Practice. Eat. Sleep.</p>
     </div>
-    <br>
+</header>
 
-    <!-- span is like div, but used on small segments of text, lnks, images, 
-        etc. that appear inline with content -->
+<!-- meant for blocks of nagivation links -->
+<nav id="navbar">
+    <!-- link rel: relationship -->
+    <a class="active" href="/">Home Page</a>
+    <a href="/resume.html">Resume</a>
+    <a href="/projects.html/">Projects</a>
+    <a href="/contact.html">Contact</a>
+</nav>
 
+<p>
+    Hi! Welcome to my webpage! I'm in the middle of learning the basics of html, css, and javascript,
+    so there should be improvements coming to this page very soon!
+</p>
 
-    <aside>
-        <!-- span for adding customization mainly -->
-        <span>Favorite</span>
-        <span>Drinks</span>
-        <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ul>
+<section>
+    <div class="column-layout">
+        <div class="side-left">
+            <h2>Maximilian Wang</h2>
+            <p>Student at UCSD</p>
+            <p>Basketball enthusiast</p>
+            </ul>
+        </div>
 
-        If I had to choose an order
-        <ol>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ol>
-    </aside>
+        <div id="anchor-pagenav" class="side-right">
+            <p id="pagenav">Jump To</p>
+            <nav>
+                
+            </nav>
+        </div>
+        
+        <div class="main-column">
+            <h2 id="about">
+                A little about me...
+            </h2>
+            <ul> 
+                <li>Student at UCSD</li>
+                <li>Basketball Enthusiast</li>
+                <li>Piano/Violin</li>
+            </ul>
 
+            <div id="anchor-education"">
+                <h2 id="education">Education</h2>
+                <p>University of California San Diego</p>
+                <p>Computer Science B.S.</p>
+                <p>Class of 2024</p>
+            </div>
 
-    <footer>
-        Contact me here(with preview)<br>
-        <iframe src="https://maximilian110proj.netlify.app/contact/" title="contact me"></iframe>
-    </footer>
+            <div id="anchor-experience">
+                <h2 id="experience">Experience</h2>
+                <div>
+                    <p class="exp">John Hopkins Applied Physics Lab</p>
+                    <p class="role">ATLAS Intern</p>
+                    <ul>
+                        <li>Developed machine learning/signal processing tools to automate target ID 
+                            and analysis with MATLAB</li>
+                        <li>Built neural networks utilizing RNNs for classification over time intervals</li>
+                        <li>Created scripts that simulate, extrapolate/interpolate data that streamline 
+                            data collection and augmentation</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="exp">UCSC Google Developer Student Club</p>
+                    <p class="role">Director of Instruction</p>
+                    <ul>
+                        <li>UCSC liason with Google to prepare students for the Google Solution Challenge</li>
+                        <li>Organized 16 events consisting of workshops and study jams</li>
+                        <li>Taught 2-6 hour events coving basic proficienc in basic app/web development 
+                            (HTML, CSS, JS, Firebase) and ohter tools (PyTorch, Kubernetes, etc.)</li>
+                    </ul>
+                </div>
+            </div>
 
-</body>
+            <div id="anchor-projects">
+                <h2 id="projects">Projects</h2>
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p> Contact me!</p>
+    <div id="socials">
+        <div id="logo">
+            <a href="mailto:maximilian.yc.wang@gmail.com"><img class="logo" src="pictures/linkinlogo.png"></a>
+            <a href="https://www.linkedin.com/in/maximilian-wang/"><img class="logo" src="pictures/emaillogo.png"></a>
+        </div>
+        <div id="platform">
+            <a href="mailto:maximilian.yc.wang@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/maximilian-wang/">LinkedIn</a>
+        </div>
+    </div>
+</footer>
 
 </html>
