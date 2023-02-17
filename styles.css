@@ -93,6 +93,18 @@ a:link, a:visited {
     border-color:azure;
 }
 
+.side-right nav a:link, .side-right nav a:visited {
+  all:revert;
+  font-family: helvetica-download, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:#1f2f2f;
+  font-size: 20px;
+}
+
+.side-right nav a:hover {
+  font-style: italic;
+}
+
 .column-layout {
   max-width: 1300px;
   margin: 40px auto 0 auto;
