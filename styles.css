@@ -55,7 +55,7 @@ h3 {
   z-index: -1;
   font-size: 15vh;
   line-height: 1;
-  color: var(--pastel2)
+  color: var(--pastel2);
   width: 50vh;
   transform: rotate(10deg);
 }
@@ -207,6 +207,17 @@ footer p{
 #logo a, #platform a{
   padding: 5px;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 480px) {
+  .column-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .typing-demo {
+    font-size: 25px;
+  }
 }
 
 @media screen and (min-width: 850px) {
