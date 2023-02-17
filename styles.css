@@ -33,6 +33,10 @@ h3 {
   margin: 0px;
 }
 
+#anchor-education p, #anchor-education h3{
+  line-height: .5;
+}
+
 .backtext {
   font-family: helvetica-download;
   position:fixed;
@@ -43,6 +47,7 @@ h3 {
   line-height: 1;
   color:rgb(247, 230, 247);
   width: 50vh;
+  transform: rotate(10deg);
 }
 
 #navbar {
@@ -73,13 +78,13 @@ a:link, a:visited {
     color: darkslategrey;
     padding: 10px;
     border-radius: 5px;
+    transition: background-color 1s, font-weight 1s;
 }
 
 a:hover {
     background-color:blanchedalmond;
     font-weight: bold;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .column-layout {
@@ -119,6 +124,10 @@ a:hover {
   margin-bottom: 20px;
   box-sizing: border-box;
   flex-basis: 60%;
+}
+
+.expPhoto {
+  width: 100%;
 }
 
 .wrapper {
